@@ -9,11 +9,11 @@ import java.util.List;
 @Repository
 public class MovieRepository {
 
-    private final List<Movie> movieList;
-    private final List<Director> directorList;
-    private final HashMap<Movie, Director> movieDirectorHashMap;
+    private List<Movie> movieList;
+    private List<Director> directorList;
+    private HashMap<Movie, Director> movieDirectorHashMap;
 
-    private final HashMap<Director, List<Movie>> directorListHashMap;
+    private HashMap<Director, List<Movie>> directorListHashMap;
 
     public MovieRepository(List<Movie> movieList, List<Director> directorList, HashMap<Movie, Director> movieDirectorHashMap, HashMap<Director, List<Movie>> directorListHashMap) {
         this.movieList = movieList;
